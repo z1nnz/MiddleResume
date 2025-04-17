@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 引入超帥寫輪眼網頁圖示 -->
+    <link rel="icon" type="image/x-icon" href="./image/favicon/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./image/favicon/favicon-96x96.png">
+    <link rel="apple-touch-icon" href="./image/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="./image/favicon/site.webmanifest">
+    <title>Resume</title>
+    <!-- 引入外部 CSS 檔案 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 右上角跟隨目錄 -->
+    <div class="navbar">
+      <a href="#profile">About me</a>
+      <a href="#skills">skills</a>
+      <a href="#experience">Experiences</a>
+    </div>
+
+    <div id="profile" class="block profile-section">
+      <!-- 左側區塊：大頭照、名字、社交連結 -->
+      <div class="profile-left">
+          <img src="./image/IMG_6662.jpg" alt="個人照片" class="profile-img">
+      <div class="profile-text">
+          <h2 class="glitch" data-text="吳紘在">吳紘在</h2>
+          <div class="degree" data-text="中原大學-企業管理學系">中原大學-企業管理學系</div>
+          <div class="DualDegree" data-text="雙主修-資訊管理學系">雙主修-資訊管理學系</div>            
+      </div>
+  
+      <div class="social-icons">
+          <a href="https://www.facebook.com/z1nnz/" target="_blank">
+            <img src="./image/social_media/facebook.png" alt="Facebook" style="width:24px; height:24px;">
+          </a>
+          <a href="https://www.instagram.com/z1nnz_/" target="_blank">
+            <img src="./image/social_media/instagram.png" alt="Instagram" style="width:24px; height:24px;">
+          </a>
+          <a href="https://x.com/realdonaldtrump?lang=zh-Hant" target="_blank">
+            <img src="./image/social_media/x.png" alt="X" style="width:24px; height:24px;">
+          </a>
+          <a href="https://github.com/z1nnz" target="_blank">
+            <img src="./image/social_media/github.png" alt="GitHub" style="width:24px; height:24px;">
+          </a>
+          <!-- Email 發信連結 -->
+          <a href="mailto:brucewu0111@gmail.com">
+            <img src="./image/social_media/gmail.png" alt="Email" style="width:24px; height:24px;">
+          </a>
+      </div>
+      </div>
+  
+      <!-- 右側區塊：Quote 和 標籤 -->
+      <div class="profile-right">
+        <!-- # Quote -->
+        <div class="quote">
+        <div class="profile-text">
+          <h3># 關於我</h3>
+        </div>
+          <p data-text="為了守護自由而捨棄自由">為了守護自由而捨棄自由</p>
+        </div>
+  
+        <!-- # label -->
+        <div class="label">
+          <h3># 標籤</h3>
+            <!-- 小卡片容器 -->
+            <div class="small-cards">
+              <div class="small-card"><p>＃希望轉系成功</p></div>
+              <div class="small-card"><p>＃生日0111</p></div>
+              <div class="small-card"><p>＃喜歡火影忍者</p></div>
+              <div class="small-card"><p>＃以後想做遊戲開發</p></div>
+              <div class="small-card"><p>＃好想睡覺</p></div>
+              <div class="small-card"><p>＃努力考研</p></div>
+            </div>
+        </div>
+      </div>
+    </div> <!-- 這是 .about me 結束 -->
+  
+
+    <div id="skills" class="block skills">
+      <h3>程式能力 ｜ Programming ability</h3>
+      <div class="progress-container">
+        <!-- 三個進度圈（上排）1 -->
+        <div class="progress-circle" data-skill="Python" data-percent="90">
+          <svg width="120" height="120">
+            <defs>
+              <linearGradient
+                id="gradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" style="stop-color: #00FFFF" />
+                <stop offset="100%" style="stop-color: #3498db" />
+              </linearGradient>
+            </defs>
+            <circle class="background" cx="60" cy="60" r="50" />
+            <circle class="progress" cx="60" cy="60" r="50" />
+          </svg>
+          <div class="progress-text">Python</div>
+        </div>
+        <!-- 三個進度圈（上排）2 -->
+        <div class="progress-circle" data-skill="CSS" data-percent="80">
+          <svg width="120" height="120">
+            <defs>
+              <linearGradient
+                id="gradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" style="stop-color: #00FFFF" />
+                <stop offset="100%" style="stop-color: #3498db" />
+              </linearGradient>
+            </defs>
+            <circle class="background" cx="60" cy="60" r="50" />
+            <circle class="progress" cx="60" cy="60" r="50" />
+          </svg>
+          <div class="progress-text">CSS</div>
+        </div>
+        <!-- 三個進度圈（上排）3 -->
+        <div class="progress-circle" data-skill="Java" data-percent="85">
+          <svg width="120" height="120">
+            <defs>
+              <linearGradient
+                id="gradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" style="stop-color: #00FFFF" />
+                <stop offset="100%" style="stop-color: #3498db" />
+              </linearGradient>
+            </defs>
+            <circle class="background" cx="60" cy="60" r="50" />
+            <circle class="progress" cx="60" cy="60" r="50" />
+          </svg>
+          <div class="progress-text">Java</div>
+        </div>
+        <!-- 三個進度圈（下排）1 -->
+        <div class="progress-circle" data-skill="C++" data-percent="70">
+          <svg width="120" height="120">
+            <defs>
+              <linearGradient
+                id="gradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" style="stop-color: #00FFFF" />
+                <stop offset="100%" style="stop-color: #3498db" />
+              </linearGradient>
+            </defs>
+            <circle class="background" cx="60" cy="60" r="50" />
+            <circle class="progress" cx="60" cy="60" r="50" />
+          </svg>
+          <div class="progress-text">C++</div>
+        </div>
+        <!-- 三個進度圈（下排）2 -->
+        <div class="progress-circle" data-skill="HTML" data-percent="75">
+          <svg width="120" height="120">
+            <defs>
+              <linearGradient
+                id="gradient"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop offset="0%" style="stop-color: #00FFFF" />
+                <stop offset="100%" style="stop-color: #3498db" />
+              </linearGradient>
+            </defs>
+            <circle class="background" cx="60" cy="60" r="50" />
+            <circle class="progress" cx="60" cy="60" r="50" />
+          </svg>
+          <div class="progress-text">HTML</div>
+        </div>
+        <!-- 三個進度圈（下排）3 -->
+        <div class="progress-circle" data-skill="JavaScript" data-percent="80">
+          <svg width="120" height="120">
+            <defs>
+              <linearGradient 
+                id="gradient"
+                x1="0%"
+                y1="0%"
+                x2="100%" 
+                y2="100%"
+              >
+                <stop offset="0%" style="stop-color: #00FFFF" />
+                <stop offset="100%" style="stop-color: #3498db" />
+              </linearGradient>
+            </defs>
+            <circle class="background" cx="60" cy="60" r="50" />
+            <circle class="progress" cx="60" cy="60" r="50" />
+          </svg>
+          <div class="progress-text">JavaScript</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block skills">
+      <h3>學科能力 ｜ Subject ability</h3>
+      <div class="progress-bar-container">
+        <!-- Macroeconomics -->
+        <div class="progress-label">
+          <span>Macroeconomics</span><span class="bar-percent">99%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-percent="99"></div>
+        </div>
+        <!-- Microeconomics -->
+        <div class="progress-label">
+          <span>Microeconomics</span><span class="bar-percent">99%</span>
+        </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-percent="99"></div>
+          </div>
+        <!-- big data -->
+        <div class="progress-label">
+          <span>big data</span><span class="bar-percent">85%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-percent="85"></div>
+        </div>
+        <!-- Marketing Management -->
+        <div class="progress-label">
+          <span>Marketing Management</span><span class="bar-percent">86%</span>
+        </div>
+          <div class="progress-bar">
+            <div class="progress-fill" data-percent="75"></div>
+          </div>
+        <!-- Accounting or Accountancy -->
+        <div class="progress-label">
+          <span>Accounting or Accountancy</span><span class="bar-percent">90%</span>
+        </div>
+        <div class="progress-bar">
+          <div class="progress-fill" data-percent="90"></div>
+        </div>
+      </div>
+    </div> <!-- 這是 .skills 結束 -->
+
+    <div id="experience" class="block experience">
+      <h3>個人經歷 ｜ Experiences</h3>
+
+        <!-- 經歷選單 -->
+        <div class="experience-switcher">
+          <button class="exp-btn selected" data-target="study">學習經歷</button>
+          <button class="exp-btn" data-target="course">課程活動</button>
+          <button class="exp-btn" data-target="others">特殊經歷與興趣</button>
+        </div>
+
+        <!-- 對應區塊 -->
+        <div id="study" class="exp-content" style="display: block;"> 
+          <div class="education-item-hover">
+
+            <!-- 左邊：文字 -->
+            <div class="education-text">
+              <h4>新竹縣立成功國中（2016/09 - 2019/06）</h4>
+              <p>
+                在成功國中三年的學習過程中，我穩固了各科基礎，也擔任了班級幹部與參與校內活動，
+                培養了良好的人際溝通與領導能力。國中大多都沈浸在學科中，但那時我就有想當遊戲設計師了。
+              </p>
+              <a href="./image/award1.jpg" target="_blank">📄 縣測成績單照片</a>
+            </div>
+          
+            <!-- 右邊圖片：hover 卡片時顯示 -->
+            <div class="education-image-wrapper">
+              <img src="./image/school/chenggong.jpg" alt="成功國中校門" class="education-hover-image">
+            </div>
+
+          </div>
+          
+          <div class="education-item-hover">
+            <!-- 左邊：文字內容 -->
+            <div class="education-text">
+              <h4>新竹縣立竹北高中（2019/09 - 2022/06）</h4>
+              <p>
+                就讀竹北高中三年期間，我積極參與資訊研究社及校內科技活動，並開始學 Java 與 C++，自己找網路上的教學影片自學
+                ，發現寫程式不是那麼容易，一度有想要放棄，尤其是物件導向的部分，最拿得出手的也只有自己寫出一份簡易計算機的程式
+                ，稍後會在特殊經歷內看到他。             
+              </p>
+            </div>
+          
+            <!-- 右邊：圖片（hover 卡片時顯示） -->
+            <div class="education-image-wrapper">
+              <img src="./image/school/zhubei.jpg" alt="竹北高中校門" class="education-hover-image">
+            </div>
+
+          </div>
+
+          <div class="education-item-hover">
+            <!-- 左邊：文字內容 -->
+            <div class="education-text">
+              <h4>中原大學（2023/09 - Present）</h4>
+              <p>
+                就讀中原大學企業管理學系，並輔系/雙主修資訊管理，大一下決定轉入資管系。但太晚覺悟大一上成績不盡理想，
+                於是在大一下發憤圖強取得不錯的成績，在本學期發覺自己的興趣，並持續以考研為目標努力，本學期也參加了許多參加 AI 與
+                資料分析競賽，雖然還未進行與取得成績，但我會盡力取得好成績，期望未來能成為具備技術與管理視野的跨領域人才。
+              </p>
+              <a href="./image/IMG_8435.JPG">📥 AI教與學標竿課程實踐暨成果展演競賽專案</a>
+            </div>
+          
+            <!-- 右邊：圖片（hover 卡片時顯示） -->
+            <div class="education-image-wrapper">
+              <img src="./image/school/cycu.jpg" alt="中原大學校園照片" class="education-hover-image">
+            </div>
+
+          </div>
+
+        </div>
+        
+        <div id="course" class="exp-content" style="display:none;">
+          <div class="education-item-hover">
+            <!-- 左邊：課程活動說明 -->
+            <div class="education-text">
+              <h4>語文與修辭：文學走讀報告《萬華走讀》</h4>
+              <p>
+                在語文與修辭課程中，我們以《市場歲月》這本書為主題，規劃了一次實地走讀與文學報導專題。
+                報告以 PPT 呈現書籍分析、路線規劃與田野紀錄，我們實地走訪龍山寺、剝皮寮、西門紅樓、青草巷、清水巖等地點
+                ，結合地方歷史、庶民文化與現場觀察，對萬華歷史文化有更深入的了解。
+                (本展示為簡報少部分內容圖像集)
+              </p>
+              <a href="https://www.canva.com/design/DAGBPne0B2U/tgpoG7Bsk470tEFAWfHbSA/view?utm_content=DAGBPne0B2U&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hc529264371" 
+                  target="_blank"
+                    style="display: inline-block; margin-top: 10px; color: #00ccff;">
+                    📥 點我觀看完整 Canva 簡報成果
+              </a>
+            
+            </div>
+          
+            <!-- 右側：圖片輪播 -->
+            <div class="carousel">
+              <div class="slides">
+                <img src="./image/ch_report/slide1.jpg" class="slide active">
+                <img src="./image/ch_report/slide2.jpg" class="slide">
+                <img src="./image/ch_report/slide3.jpg" class="slide">
+                <img src="./image/ch_report/slide4.jpg" class="slide">
+                <img src="./image/ch_report/slide5.jpg" class="slide">
+                <img src="./image/ch_report/slide6.jpg" class="slide">
+                <img src="./image/ch_report/slide7.jpg" class="slide">
+                <img src="./image/ch_report/slide8.jpg" class="slide">
+                <img src="./image/ch_report/slide9.jpg" class="slide">
+                <img src="./image/ch_report/extra1.jpg" class="slide">
+                <img src="./image/ch_report/extra2.jpg" class="slide">
+                <img src="./image/ch_report/extra3.jpg" class="slide">
+                <img src="./image/ch_report/extra4.jpg" class="slide">
+                <img src="./image/ch_report/extra5.jpg" class="slide">
+              </div>
+              <button class="prev" onclick="prevSlide()">❮</button>
+              <button class="next" onclick="nextSlide()">❯</button>
+            </div>
+          </div><!-- 文學區塊截止 -->
+          
+          <div class="education-item-hover">
+            <!-- 左側文字說明區 -->
+            <div class="education-text">
+              <h4>宗教哲學：人物訪談報告《其師其夢》</h4>
+              <p>
+                在《宗教哲學》課程中，我首度獨立進行人物訪談，對象為吳水泉教授。透過訪談設計與引導，深入了解其求學歷程、
+                教學理念與人生價值觀，並從中反思「哲學如何在日常中實踐」。本次訪談受到教授高度肯定，他認為我具備精準引導、
+                傾聽與對話能力，也讓我在過程中學習如何將抽象哲理化為具體行動。完整內容請參考下方連結報告。
+              </p>
+              <a href="https://www.canva.com/design/DAGDby51xXs/F0FSURKoLAL8x7ImET59Xg/view?utm_content=DAGDby51xXs&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=had7df2c210"
+                 target="_blank"
+                 style="display: inline-block; margin-top: 10px; color: #00ccff;">
+                📥 點我線上閱讀完整人物訪談報告
+              </a>
+            </div>
+          
+            <!-- 右側：輪播圖片集 -->
+            <div class="carousel-2">
+              <div class="slides-2">
+                <img src="./image/re_report/compressed_2.jpg" class="slide-2 active">
+                <img src="./image/re_report/compressed_4.jpg" class="slide-2">
+                <img src="./image/re_report/compressed_5.jpg" class="slide-2">
+                <img src="./image/re_report/compressed_8.jpg" class="slide-2">
+                <img src="./image/re_report/compressed_9.jpg" class="slide-2">
+                <img src="./image/re_report/compressed_10.jpg" class="slide-2">
+                <img src="./image/re_report/compressed_15.jpg" class="slide-2">
+              </div>
+              <button class="prev-btn-2" onclick="prevSlide()">❮</button>
+              <button class="next-btn-2" onclick="nextSlide()">❯</button>
+            </div>
+          </div>
+          
+          
+        </div>
+        <div id="others" class="exp-content" style="display:none;">這裡放特殊經歷的內容</div>
+
+
+    </div>
+    <!-- 這是 .experience 結束 -->
+
+    <footer>
+      <div style="margin: 32px; text-align: center;">
+          <hr style="border-color:#ffffff" noshade>
+          <div style="margin-top: 32px; color: white;">
+              Copyright @2025 Wu hong-zai
+              <br>
+          </div>
+      </div>
+    </footer>
+    <!-- 這是 版權所有 結束 -->
+    
+
+    <!-- 星空背景容器 -->
+    <div id="stars-background">
+      <canvas id="stars-canvas"></canvas>
+    </div>
+
+    <!-- JavaScript引入 -->
+    <script src="./animationJavascript/carousel.js"></script>
+    <script src="./animationJavascript/circle.js"></script>
+    <script src="./animationJavascript/main.js"></script>
+    <script src="./animationJavascript/stars.js"></script>
+
+  </body>
+</html>
