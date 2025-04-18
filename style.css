@@ -23,7 +23,7 @@ h3:hover {
   transform: scale(1.2); /* 放大文字 */
   color: #3498db; /* 改變文字顏色 */
 }
-
+/* 目錄 */
 .navbar {
   position: fixed;
   top: 0;
