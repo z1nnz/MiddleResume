@@ -72,3 +72,24 @@ function prevSlide() {
 setInterval(() => {
   nextSlide();
 }, 4000);
+
+const slidesAward = document.querySelectorAll('.slide-award');
+const prevAward = document.querySelector('.prev-award');
+const nextAward = document.querySelector('.next-award');
+let currentAwardIndex = 0;
+
+function showAwardSlide(index) {
+  slidesAward.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+}
+
+prevAward.addEventListener('click', () => {
+  currentAwardIndex = (currentAwardIndex - 1 + slidesAward.length) % slidesAward.length;
+  showAwardSlide(currentAwardIndex);
+});
+
+nextAward.addEventListener('click', () => {
+  currentAwardIndex = (currentAwardIndex + 1) % slidesAward.length;
+  showAwardSlide(currentAwardIndex);
+});

@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Jost", "Noto Sans TC", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #eef1f5;
@@ -35,6 +35,8 @@ h3:hover {
   display: flex;
   gap: 20px;
   padding: 15px 30px;
+  margin-top: 5px;
+  margin-right: 5px;
 }
 .navbar a {
   text-decoration: none;
@@ -76,7 +78,7 @@ h3:hover {
   text-align: center;
   gap: 15px; /* 元素間距 */
   width: 500px; /* 統一寬度，兩卡片左右對齊 */
-  height: 430px;
+  height: 435px;
   background-color: #696969;
   border-radius: 10px;
   padding: 20px;
@@ -383,13 +385,14 @@ h3:hover {
 .small-card {
   background-color: #a9a9a9;
   border-radius: 15px;
-  padding: 3px 20px;
+  padding: 3px 10px;
   font-size: 16px;
   display: flex; /* 使用 flex 進行置中 */
   align-items: center; /* 垂直置中 */
   justify-content: center; /* 水平置中 */
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  margin-top: 10px;
 }
 /* 加上更高的優先權，覆蓋全局 p 樣式 */
 .small-card p {
@@ -854,6 +857,71 @@ circle {
   right: 10px;
 }
 
+.carousel-award {
+  position: relative;
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  margin-left: -20px;
+  margin-top: 40px;
+}
+
+.slides-award {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-award {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide-award.active {
+  display: block;
+}
+
+.prev-award,
+.next-award {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 6px 12px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-award {
+  left: 10px;
+}
+
+.next-award {
+  right: 10px;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 比例 */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 /* 星空背景容器設定 */
 #stars-background {
   position: fixed;
@@ -864,4 +932,67 @@ circle {
   z-index: -1; /* 放在最底層 */
   pointer-events: none; /* 不影響其他互動 */
   background: black; /* 星空背景預設為黑色 */
+}
+
+/* 響應式：手機版（最大寬度 768px） */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-block,
+  .carousel,
+  .video-frame,
+  .single-image {
+    width: 100% !important;
+    margin: 10px 0 !important;
+  }
+
+  .carousel,
+  .carousel-award,
+  .carousel-crm {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16/9;
+  }
+
+  .slide,
+  .slide-award,
+  .slide-crm {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+  }
+
+  .prev,
+  .next,
+  .prev-award,
+  .next-award,
+  .prev-crm,
+  .next-crm {
+    font-size: 18px;
+    padding: 4px 8px;
+  }
+
+  .text-block p,
+  .text-block h3,
+  .text-block h4 {
+    text-align: center;
+  }
+
+  .video-frame iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+
+  .section {
+    padding: 20px 10px;
+  }
 }
